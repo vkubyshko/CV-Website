@@ -4,16 +4,18 @@
         <title>My Webpage</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         
         <div class="landing">
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item active" aria-currnet="page">  HOME  </li>
                 <li class="breadcrumb-item"><a href="#education">  EDUCATION  </a></li>
@@ -27,14 +29,14 @@
         <h1>VICTORIA KUBYSHKO</h1>
         <div class="line"><hr></div>
         <h3 class="pitch">I am a senior at Carnegie Mellon University and looking for a role as an entry level software engineer at a company that fosters learning and creativity in a fast-paced environment.</h3>
-        <a href="#education"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+        <a href="#education"><span class="fa fa-angle-down" aria-hidden="true"></span></a>
         <span id="education" class="info">
         <div class="title">Education</div>
         <span class="row">
         <div class="col-md-1"></div>
         <div class="col-md-6">
             <h2>Carnegie Mellon University, 2016-2020</h2>
-            <h5 class="italic">Pittsburgh, PA</h5>
+            <h5 class="location italic">Pittsburgh, PA</h5>
             <h5>BS in Mathematical Sciences and Physics</h5>
             <h5>GPA: 3.8</h5>
         </div>
@@ -42,12 +44,11 @@
             <span class="additions">
             <h4>Relevant Classes:</h4>
             <ul>
-                <li>Imperative Computation (15-122)</li>
-                <li>Programming and Computer Science (15-112)</li>
-                <li>Combinatorics, Discrete Math</li>
-                <li>Matrices and Linear Transformations</li>
-                <li>Numerical Methods</li>
-                <li>Operations Research I</li>
+                <li>Imperative Computation (15-122),</li>
+                <li>Programming and Computer Science (15-112),</li>
+                <li>Combinatorics, Discrete Math,</li>
+                <li>Matrices and Linear Transformations,</li>
+                <li>Numerical Methods, Operations Research I</li>
             </ul>
             </span>
         </div>
@@ -84,6 +85,20 @@
         <span id="experience" class="info">
         <div class="title">Experience</div>
         <span class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-9">
+            <h2>Fidelity Investments, Software Engineering Intern</h2>
+            <h5 class="italic">Westlake, TX</h5>
+            <ul>
+                <li>Designed and implemented cost control tools in Python for Fidelity’s cloud services, reduced costs by 20%</li>
+                <li>Built tool to ensure tag-compliance in AWS within the business unit to reduce costs</li>
+                <li>Created Angular web app to automate feedback for teams on their path to the Cloud</li>
+            </ul>
+            <h6>Skills: Python, AWS (Lambda, EC2, DynamoDB, S3, CloudTrail, CloudWatch), Splunk, BDD Testing, Node.js, Angular, HTML/CSS, Javascript</h6>
+        </div>
+        <div class="col-md-2">May - Aug 2018</div>
+        </span>
+        <span class="row">
             <div class="col-md-1"></div>
             <div class="col-md-9">
                 <h2>Prof. Diana Parno, Research Assistant</h2>
@@ -100,53 +115,109 @@
         <span class="row">
         <div class="col-md-1"></div>
         <div class="col-md-9">
-            <h2>Fidelity Investments, Software Engineering Intern</h2>
-            <h5 class="italic">Westlake, TX</h5>
-            <ul>
-                <li>Designed and implemented cost control tools in Python for Fidelity’s cloud services, reduced costs by 20%</li>
-                <li>Built tool to ensure tag-compliance in AWS within the business unit to reduce costs</li>
-                <li>Created Angular web app to automate feedback for teams on their path to the Cloud</li>
-            </ul>
-            <h6>Skills: Python, Amazon Web Services (Lambda, EC2, DynamoDB, S3, CloudTrail, CloudWatch), Splunk, BDD Testing, Node.js, Angular, HTML/CSS, Javascript</h6>
-        </div>
-        <div class="col-md-2">May - Aug 2018</div>
-        </span>
-        <span class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-9">
             <h2>Prof. Matthew Walker, Research Assistant</h2>
             <h5 class="italic">Pittsburgh, PA</h5>
             <ul>
-                <li>Modeled the proper motion in right ascension and declination of stars from M54 and Sagittarius to quantify the effects of dark matter</li>
+                <li>Modeled the proper motion in right ascension and declination of stars in M54 and Sagittarius to quantify effects of dark matter</li>
                 <li>Developed an optimization model in Python for galaxy clusters using the Gaia data release </li>
             </ul>
             <h6>Skills: Python (pyplot, emcee), Statistical modeling</h6>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-2">Jan 2018 - Dec 2019</div>
         </span>
         </span>
-        <span id="projects" class="info">
+        <span id="projects">
         <div class="title">Projects</div>
-        <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">NASA's Space Explorer</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Game Development</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-        </div>
-        </div>
-        <div class="card">
+        <span class="row">
+        <div class="col-md-4">
+            <div class="card">
                 <div class="card-header">
-                  Featured
+                    In Progress
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Online Book Review</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Website</h6>
+                    <p class="card-text">
+                        Users register for the website and can search for books, leave reviews, and read reviews made by others.
+                        Uses API by Goodreads, allowing users to request book details and book reviews.
+                    </p>
                 </div>
-              </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Tools: Python, Flask, SQL, CSS/HTML</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">CV Website</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Website</h6>
+                    <p class="card-text">
+                        My first website built from scratch! Simple CV website using only Bootstrap 4, one HTML file, and one SCSS file.
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Tools: CSS/HTML, Bootstrap</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Git Repo</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">C0VM Implementation</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Virtual Machine Implementation</h6>
+                    <p class="card-text">
+                        Implemented a C0 virtual machine that interprets bytecode using a stack implementation in C.
+                        Handles functions, variables, errors and assertions, and memory allocation.
+                            
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Tools: C0, C</li>
+                </ul>
+            </div>
+        </div>
         </span>
-
+        <span class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">NASA Explorer</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Game Development</h6>
+                    <p class="card-text">
+                        Designed and programmed an interactive Kinect game in Python. Used object-oriented 
+                        programming to connect real-time data from Kinect sensors to player’s movements.
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Tools: Python (pygame), SDK Kinect</li>
+                </ul>
+                <div class="card-body">
+                    <a href="https://youtu.be/IACRHurZrog" target="_blank" class="btn btn-primary">Demo</a>
+                    <a href="https://github.com/vkubyshko/NASAExplorer.git" target="_blank" class="btn btn-primary">Git Repo</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Yelp You Out, HackCMU</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">App Development</h6>
+                        <p class="card-text">
+                            Worked on a small team to create a POC that built off the Yelp API to create a multi-user platform.
+                            Wrote code for optimization of multiple users’ preferences using Python.    
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Tools: Python, HTML</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://youtu.be/XYJ6WIQjGvA" target="_blank" class="btn btn-primary">Demo</a>
+                    </div>
+                </div>
+            </div>
     </body>
 </html>
